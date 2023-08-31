@@ -1,0 +1,6 @@
+﻿----------------------Product Management System--------------------
+------------------To Add New Product => Press N--------------------
+-----------------To Delete a Product => Press D--------------------
+-------------------To find a Product => Press F--------------------
+--------------To Display all Product => Press AD-------------------
+--------To Update details of Product => Press U--------------------
