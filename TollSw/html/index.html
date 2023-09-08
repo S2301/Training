@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navyuga Toll - Home</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="../images/logo.jpg" alt="Spotify logo">Navayuga Infrastructure Toll Software</li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="">New Entry</a></li>
+            <li><a href="">Statistics</a></li>
+            <li><a href="">Search</a></li>
+        </ul> 
+    </nav>
+
+    <h2 style="text-align: center;padding-top:10px">Welcome to Nelamangla Toll Software</h2>
+    <br>
+    <div class="content" id="About">
+        <h3>About Us</h3>
+        <br>
+        <p>
+            Navayuga Infrastructure is a multi-dimensional entity with an extremely diversified portfolio. The company has earned a reputation as a pioneer in the industry, with unmatched domain knowledge and expertise in delivering projects on time and within budget. Our toll software is designed to make the process of collecting toll fees at the Toll Plaza quick and easy. With this software, user can make an entry of the vehicle and generate the toll amount for the vehicle, which is collected manually. The software supports a range of vehicle categories, including Bikes, LMV, HMV, and Heavy Trucks, with a fixed price for each vehicle.
+        </p>
+        </div>
+
+    <div class="new">
+        <h3>New Entry</h3>
+        <form>
+            <p>
+                Entry ID:<input type="number" name="id" id="newId" disabled>
+            </p>
+            <p>
+                Enter the vehicle number: <input type="text" id="newVehNo">
+            </p>
+            <p>
+                Enter the category
+                <select name="Category" id="newCategory">
+                    <!--Bikes,LMV,HMV,Heavy Trucks-->
+                    <option>Choose a Vehicle Category</option>
+                    <option value="Bike">Bike</option>
+                    <option value="LMV">LMV</option>
+                    <option value="HMV">HMV</option>
+                    <option value="HeavyTrucks">Heavy Trucks</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                <button id="btnNewSubmit">Submit</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

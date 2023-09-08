@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+body{
+    background-color:black;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    height:90px;
+    background-color:black;
+    color:white;
+}
+
+
+.brand img{
+    width:75px;
+    height:55px;
+    padding:0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size:1.3rem;
+    padding-left:400px;
+}
+
+
+nav ul li{
+    padding:0 50px;
+}
+
+/* .container{
+    min-height: 75vh;
+}
+.bottom{
+    position:sticky;
+    height:103px;
+    background-color:black;
+    bottom:0;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+}
+
+#myProgressBar{
+    width:80vw;
+   
+} */
+
+.menu{
+    background-color:#00cc99;
+    padding-left:250px;
+    color: black;
+    height:65px;
+}
+
+nav ul li a{
+    color:blacks;
+}
+
+div{
+    display: inline-block;
+    width: 45%;
+    border: 2px dotted white;
+    color:#00cc99;
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+}
+
+h3{
+    color:white;
+}
+
+::content p{
+    text-align: justify;
+    padding-bottom:50px;
+    font-weight:bold;
+}
+
+.new{
+    line-height: 2em;
+    padding-bottom:35px;
+    text-align: center;
+}
+
+.new p{
+    text-align: left;
+    padding-left:50px;
+    font-size: 16px;
+}
+
+.new button{
+    item-align:center;
+    text-align: center;
+    margin:5px;
+    height:30px;
+    border-radius: 12px;
+    padding-bottom:5px;
+}
+
+#btnNewSubmit{
+    background-color: #00cc99;
+    border: none;
+    color: black;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

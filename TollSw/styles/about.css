@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+body{
+ 
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3{
+    text-align: center;
+    padding-top:20px;
+}
+
+.content{
+    
+}
