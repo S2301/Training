@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toll Plaza Software</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<h1>Navayuga Infrastructure - Toll Plaza Software</h1>
+
+<!-- <ul id="navbar">
+    <li><a href="#" class="nav-link" data-target="#div1">Div 1</a></li>
+    <li><a href="#" class="nav-link" data-target="#div2">Div 2</a></li>
+    <li><a href="#" class="nav-link" data-target="#div3">Div 3</a></li>
+</ul> -->
+<nav>
+    <ul class="menu">
+        <li><a href="#">New Entry</a></li>
+        <li><a href="#">Statistics</a></li>
+        <li><a href="#">Search</a></li>
+    </ul>
+</nav>
+
+
+<h2>Nelamangla Toll Plaza</h2>
+
+<div class="NewEntry">
+    <span id="titles">New Entry</span>
+    <br><br>
+    <form id="entryForm">
+        <label for="vehicleCategory">Vehicle Category:</label>
+        <br>
+        <br>
+        <select id="vehicleCategory" name="vehicleCategory">
+        <option value="">Choose a Vehicle Category</option>
+        <option value="Bike">Bike</option>
+        <option value="LMV">LMV</option>
+        <option value="HMV">HMV</option>
+        <option value="Heavy Truck">Heavy Truck</option>
+        </select>
+        <br><br>
+        <label for="vehicleRegNo">Vehicle Registration Number:</label>
+        <br><br>
+        <input type="text" id="vehicleRegNo" name="vehicleRegNo"><br><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+
+<div class="Statistics">
+    <span id="titles">Statistics</span>
+    <br>
+    <br>
+    <span>Total Amount Collected grouped by vehicle type</span>
+    <br>
+    <br>
+    <table id="statisticsTable" border="1">
+    <tr>
+    <th>Vehicle Category</th>
+    <th>Total Amount Collected</th>
+    </tr>
+    </table>
+</div>
+
+<div class="Search">
+    <span id="titles">Search</span>
+    <br>
+    <br>
+    <form id="searchForm">
+    
+    <label for="searchCategory">Vehicle Category:</label>
+    <br><br>
+    <select id="searchCategory" name="searchCategory">
+    <option value="">Choose a Vehicle Category</option>
+    <option value="Bike">Bike</option>
+    <option value="LMV">LMV</option>
+    <option value="HMV">HMV</option>
+    <option value="Heavy Truck">Heavy Truck</option>
+    </select><br><br>
+
+    <label for="searchRegNo">Vehicle Registration Number:</label>
+    <br><br>
+    <input type="text" id="searchRegNo" name="searchRegNo"><br><br>
+
+    <input type="submit" value="Search" id="search">
+    </form>
+
+    <br><br>
+    <table id="searchResultsTable" border="1">
+        <tr>
+        <th>Vehicle Category</th>
+        <th>Vehicle Registration Number</th>
+        <th>Toll Amount</th>
+        </tr>
+    </table>
+
+</div>
+ 
+<!-- link to jQuery library -->
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<!-- Add custom script -->
+<script src="../scripts/script.js"></script>
+</body>
+</html>
