@@ -1,128 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
-
-body{
-    background-color:black;
-    color: white;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-nav{
+body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-}
-
-nav ul{
-    display: flex;
-    align-items:center;
-    list-style-type: none;
-    height:90px;
     background-color:black;
     color:white;
 }
 
-
-.brand img{
-    width:75px;
-    height:55px;
-    padding:0 8px;
+h1,h2{
+    text-align: center;
 }
 
-.brand{
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size:1.3rem;
-    padding-left:400px;
-}
-
-
-nav ul li{
-    padding:0 50px;
-}
-
-/* .container{
-    min-height: 75vh;
-}
-.bottom{
-    position:sticky;
-    height:103px;
-    background-color:black;
-    bottom:0;
-    display:flex;
-    justify-items:center;
-    align-items:center;
-}
-
-#myProgressBar{
-    width:80vw;
-   
-} */
-
-.menu{
+nav{
+    text-align: center;
     background-color:#00cc99;
-    padding-left:250px;
+    padding-left:450px;
+    padding-top:20px;
     color: black;
     height:65px;
 }
 
-nav ul li a{
-    color:blacks;
+.menu{
+    display:flex;
+    list-style-type: none;
+}
+
+nav li a{
+    padding-right:50px;
 }
 
 div{
     display: inline-block;
-    width: 45%;
+    width: 30%;
     border: 2px dotted white;
-    color:#00cc99;
     vertical-align: top;
     padding: 10px;
-    margin: 10px;
-    text-align:center;
+    margin: 5px;
+    height: auto;
 }
 
-h3{
-    color:white;
-}
-
-::content p{
-    text-align: justify;
-    padding-bottom:50px;
+#titles{
+    font-size: larger;
     font-weight:bold;
+    color: #00cc99;
+    margin: 5px 0px 10px 0px;
 }
 
-.new{
-    line-height: 2em;
-    padding-bottom:35px;
-    text-align: center;
+table{
+    border-color:white;
 }
 
-.new p{
-    text-align: left;
-    padding-left:50px;
-    font-size: 16px;
+table th{
+    color: #00cc99;
 }
 
-.new button{
-    item-align:center;
-    text-align: center;
-    margin:5px;
+#submit,#search{
+    background-color:#00cc99;
+    border-radius:8px;
     height:30px;
-    border-radius: 12px;
-    padding-bottom:5px;
-}
-
-#btnNewSubmit{
-    background-color: #00cc99;
-    border: none;
-    color: black;
-    padding: 8px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }

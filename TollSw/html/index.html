@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navyuga Toll - Home</title>
-    <link rel="stylesheet" href="../styles/style.css">
+<title>Toll Plaza Software</title>
+<link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="../images/logo.jpg" alt="Spotify logo">Navayuga Infrastructure Toll Software</li>
-        </ul>
-    </nav>
+<h1>Navayuga Infrastructure - Toll Plaza Software</h1>
 
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="">New Entry</a></li>
-            <li><a href="">Statistics</a></li>
-            <li><a href="">Search</a></li>
-        </ul> 
-    </nav>
+<!-- <ul id="navbar">
+    <li><a href="#" class="nav-link" data-target="#div1">Div 1</a></li>
+    <li><a href="#" class="nav-link" data-target="#div2">Div 2</a></li>
+    <li><a href="#" class="nav-link" data-target="#div3">Div 3</a></li>
+</ul> -->
+<nav>
+    <ul class="menu">
+        <li><a href="#">New Entry</a></li>
+        <li><a href="#">Statistics</a></li>
+        <li><a href="#">Search</a></li>
+    </ul>
+</nav>
 
-    <h2 style="text-align: center;padding-top:10px">Welcome to Nelamangla Toll Software</h2>
-    <br>
-    <div class="content" id="About">
-        <h3>About Us</h3>
+
+<h2>Nelamangla Toll Plaza</h2>
+
+<div class="NewEntry">
+    <span id="titles">New Entry</span>
+    <br><br>
+    <form id="entryForm">
+        <label for="vehicleCategory">Vehicle Category:</label>
         <br>
-        <p>
-            Navayuga Infrastructure is a multi-dimensional entity with an extremely diversified portfolio. The company has earned a reputation as a pioneer in the industry, with unmatched domain knowledge and expertise in delivering projects on time and within budget. Our toll software is designed to make the process of collecting toll fees at the Toll Plaza quick and easy. With this software, user can make an entry of the vehicle and generate the toll amount for the vehicle, which is collected manually. The software supports a range of vehicle categories, including Bikes, LMV, HMV, and Heavy Trucks, with a fixed price for each vehicle.
-        </p>
-        </div>
+        <br>
+        <select id="vehicleCategory" name="vehicleCategory">
+        <option value="">Choose a Vehicle Category</option>
+        <option value="Bike">Bike</option>
+        <option value="LMV">LMV</option>
+        <option value="HMV">HMV</option>
+        <option value="Heavy Truck">Heavy Truck</option>
+        </select>
+        <br><br>
+        <label for="vehicleRegNo">Vehicle Registration Number:</label>
+        <br><br>
+        <input type="text" id="vehicleRegNo" name="vehicleRegNo"><br><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
 
-    <div class="new">
-        <h3>New Entry</h3>
-        <form>
-            <p>
-                Entry ID:<input type="number" name="id" id="newId" disabled>
-            </p>
-            <p>
-                Enter the vehicle number: <input type="text" id="newVehNo">
-            </p>
-            <p>
-                Enter the category
-                <select name="Category" id="newCategory">
-                    <!--Bikes,LMV,HMV,Heavy Trucks-->
-                    <option>Choose a Vehicle Category</option>
-                    <option value="Bike">Bike</option>
-                    <option value="LMV">LMV</option>
-                    <option value="HMV">HMV</option>
-                    <option value="HeavyTrucks">Heavy Trucks</option>
-                </select>
-            </p>
-            <br>
-            <p>
-                <button id="btnNewSubmit">Submit</button>
-            </p>
-        </form>
-    </div>
+<div class="Statistics">
+    <span id="titles">Statistics</span>
+    <br>
+    <br>
+    <span>Total Amount Collected grouped by vehicle type</span>
+    <br>
+    <br>
+    <table id="statisticsTable" border="1">
+    <tr>
+    <th>Vehicle Category</th>
+    <th>Total Amount Collected</th>
+    </tr>
+    </table>
+</div>
+
+<div class="Search">
+    <span id="titles">Search</span>
+    <br>
+    <br>
+    <form id="searchForm">
+    
+    <label for="searchCategory">Vehicle Category:</label>
+    <br><br>
+    <select id="searchCategory" name="searchCategory">
+    <option value="">Choose a Vehicle Category</option>
+    <option value="Bike">Bike</option>
+    <option value="LMV">LMV</option>
+    <option value="HMV">HMV</option>
+    <option value="Heavy Truck">Heavy Truck</option>
+    </select><br><br>
+
+    <label for="searchRegNo">Vehicle Registration Number:</label>
+    <br><br>
+    <input type="text" id="searchRegNo" name="searchRegNo"><br><br>
+
+    <input type="submit" value="Search" id="search">
+    </form>
+
+    <br><br>
+    <table id="searchResultsTable" border="1">
+        <tr>
+        <th>Vehicle Category</th>
+        <th>Vehicle Registration Number</th>
+        <th>Toll Amount</th>
+        </tr>
+    </table>
+
+</div>
+ 
+<!-- link to jQuery library -->
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<!-- Add custom script -->
+<script src="../scripts/script.js"></script>
 </body>
 </html>
